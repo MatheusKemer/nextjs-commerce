@@ -11,6 +11,8 @@ export const handler: MutationHook<any> = {
     return null
   },
   useHook: () => () => {
-    return async function () {}
+    return async function () {
+      alert('useHook');
+    }
   },
 }
